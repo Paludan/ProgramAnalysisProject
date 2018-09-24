@@ -1,3 +1,0 @@
-/home/lee/Documents/ProgramAnalysisProject/build/CMakeFiles/rebuild_cache.dir
-/home/lee/Documents/ProgramAnalysisProject/build/CMakeFiles/ProgramAnalysis.dir
-/home/lee/Documents/ProgramAnalysisProject/build/CMakeFiles/edit_cache.dir
