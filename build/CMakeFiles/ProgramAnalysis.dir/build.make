@@ -57,38 +57,38 @@ include CMakeFiles/ProgramAnalysis.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ProgramAnalysis.dir/flags.make
 
-CMakeFiles/ProgramAnalysis.dir/main.cpp.o: CMakeFiles/ProgramAnalysis.dir/flags.make
-CMakeFiles/ProgramAnalysis.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lee/Documents/ProgramAnalysisProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProgramAnalysis.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProgramAnalysis.dir/main.cpp.o -c /home/lee/Documents/ProgramAnalysisProject/main.cpp
+CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o: CMakeFiles/ProgramAnalysis.dir/flags.make
+CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lee/Documents/ProgramAnalysisProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o -c /home/lee/Documents/ProgramAnalysisProject/src/main.cpp
 
-CMakeFiles/ProgramAnalysis.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProgramAnalysis.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lee/Documents/ProgramAnalysisProject/main.cpp > CMakeFiles/ProgramAnalysis.dir/main.cpp.i
+CMakeFiles/ProgramAnalysis.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProgramAnalysis.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lee/Documents/ProgramAnalysisProject/src/main.cpp > CMakeFiles/ProgramAnalysis.dir/src/main.cpp.i
 
-CMakeFiles/ProgramAnalysis.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProgramAnalysis.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lee/Documents/ProgramAnalysisProject/main.cpp -o CMakeFiles/ProgramAnalysis.dir/main.cpp.s
+CMakeFiles/ProgramAnalysis.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProgramAnalysis.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lee/Documents/ProgramAnalysisProject/src/main.cpp -o CMakeFiles/ProgramAnalysis.dir/src/main.cpp.s
 
-CMakeFiles/ProgramAnalysis.dir/main.cpp.o.requires:
+CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/ProgramAnalysis.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o.requires
 
-CMakeFiles/ProgramAnalysis.dir/main.cpp.o.provides: CMakeFiles/ProgramAnalysis.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ProgramAnalysis.dir/build.make CMakeFiles/ProgramAnalysis.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/ProgramAnalysis.dir/main.cpp.o.provides
+CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o.provides: CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ProgramAnalysis.dir/build.make CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o.provides
 
-CMakeFiles/ProgramAnalysis.dir/main.cpp.o.provides.build: CMakeFiles/ProgramAnalysis.dir/main.cpp.o
+CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o.provides.build: CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o
 
 
 # Object files for target ProgramAnalysis
 ProgramAnalysis_OBJECTS = \
-"CMakeFiles/ProgramAnalysis.dir/main.cpp.o"
+"CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o"
 
 # External object files for target ProgramAnalysis
 ProgramAnalysis_EXTERNAL_OBJECTS =
 
-ProgramAnalysis: CMakeFiles/ProgramAnalysis.dir/main.cpp.o
+ProgramAnalysis: CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o
 ProgramAnalysis: CMakeFiles/ProgramAnalysis.dir/build.make
 ProgramAnalysis: CMakeFiles/ProgramAnalysis.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lee/Documents/ProgramAnalysisProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ProgramAnalysis"
@@ -99,7 +99,7 @@ CMakeFiles/ProgramAnalysis.dir/build: ProgramAnalysis
 
 .PHONY : CMakeFiles/ProgramAnalysis.dir/build
 
-CMakeFiles/ProgramAnalysis.dir/requires: CMakeFiles/ProgramAnalysis.dir/main.cpp.o.requires
+CMakeFiles/ProgramAnalysis.dir/requires: CMakeFiles/ProgramAnalysis.dir/src/main.cpp.o.requires
 
 .PHONY : CMakeFiles/ProgramAnalysis.dir/requires
 
