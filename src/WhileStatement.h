@@ -1,0 +1,14 @@
+//
+// Created by lee on 9/27/18.
+//
+
+#ifndef PROGRAMANALYSIS_WHILESTATEMENT_H
+#define PROGRAMANALYSIS_WHILESTATEMENT_H
+
+
+class WhileStatement {
+
+};
+
+
+#endif //PROGRAMANALYSIS_WHILESTATEMENT_H

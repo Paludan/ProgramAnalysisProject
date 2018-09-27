@@ -1,0 +1,14 @@
+//
+// Created by lee on 9/27/18.
+//
+
+#ifndef PROGRAMANALYSIS_WRITESTATEMENT_H
+#define PROGRAMANALYSIS_WRITESTATEMENT_H
+
+
+class WriteStatement {
+
+};
+
+
+#endif //PROGRAMANALYSIS_WRITESTATEMENT_H
