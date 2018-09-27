@@ -6,9 +6,10 @@
 #define PROGRAMANALYSIS_STATEMENTBLOCK_H
 
 #include "Statement.h"
+#include <list>
 
 class StatementBlock : Statement{
-
+  std::list<Statement> statements;
 };
 
 
