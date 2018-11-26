@@ -12,6 +12,6 @@ let fac = (DD(DInt("x"), DInt("y")), Seq(Ass(Id "y", Int 1),
 let ifthen = (DD(DInt("x"), DInt("y")), IT(ROp(Var(Id "x"), Eq, Int 0), Ass(Id "x", Int 1)))
 
 let dg = declGraph 0 (amountOfDecls (fst fac)) (fst fac) (Map.ofList[])
-let sg = stmGraph (amountOfDecls (fst fac)) -1 (snd fac) dg
+let sg = stmGraph (amountOfDecls (fst fac)) -1 (snd fac) dg 
 
 let pg = programGraph dg sg
