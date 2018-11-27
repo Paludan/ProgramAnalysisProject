@@ -15,7 +15,10 @@ module Programgraph =
 
     let rec stmGraph (startEdge: int) (finalEdge: int) (stm: Stm) (graph: ProgramGraph): ProgramGraph =
         match stm with
-        | (Ass _) ->
+        | Ass _ ->
+            graph
+            |> addEdge startEdge finalEdge (S <| stm)
+        | RAss _ ->
             graph
             |> addEdge startEdge finalEdge (S <| stm)
         | Skip ->
@@ -46,6 +49,12 @@ module Programgraph =
             |> addEdge startEdge q1 (B <| b)
             |> addEdge startEdge finalEdge (B <| Neg(b))
             |> stmGraph q1 startEdge s
+        | Read _ -> 
+            graph
+            |> addEdge startEdge finalEdge (S <| stm)
+        | Write _ ->
+            graph
+            |> addEdge startEdge finalEdge (S <| stm) 
 
     let rec declGraph (startEdge: int) (finalEdge: int) (decl: Decl) (graph: ProgramGraph): ProgramGraph =
         match decl with

@@ -5,12 +5,15 @@ module Types =
                  | Program of Decl * Stm
 
     and Stm      =                              (* statements                *)
-                 | Ass     of Label * AExp     (* assignment                *)
+                 | Ass     of Label * AExp     (* assignment*)
+                 | RAss    of Label * AExp * AExp                
                  | Skip
                  | Seq     of Stm  * Stm         (* sequential composition    *)
                  | ITE     of BExp * Stm * Stm  (* if-then-else              *)
                  | IT      of BExp * Stm        (* if-then                   *)      
                  | While   of BExp * Stm        (* while                     *)
+                 | Read    of Label
+                 | Write   of AExp
 
     and Label    =
                  | Fst     of string
@@ -63,11 +66,14 @@ module Types =
 
     let rec prettyStm  = function
                  | Ass (l, a) -> prettyLabel l + prettyAExp a
+                 | RAss (l, a1, a2) -> prettyLabel l + prettyAExp a1 + prettyAExp a2
                  | Skip -> "skip"
                  | Seq (s1, s2) -> prettyStm s1 + prettyStm s2
                  | ITE (b, s1, s2) -> prettyBExp b + prettyStm s1 + prettyStm s2
                  | IT (b, s) -> prettyBExp b + prettyStm s     
                  | While (b, s) -> prettyBExp b + prettyStm s
+                 | Read l -> prettyLabel l
+                 | Write a -> prettyAExp a
                 
     and prettyLabel = function
         | Fst f -> f
