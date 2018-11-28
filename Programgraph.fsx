@@ -80,5 +80,5 @@ module Programgraph =
         | DD (d1, d2) -> amountOfDecls d1 + amountOfDecls d2
         | _ -> 1
 
-    let programGraph (dGraph : ProgramGraph) (sGraph : ProgramGraph) = 
-        Map.fold (fun s k v -> Map.add k v s) dGraph sGraph
+    let mapMerge m1 m2 = 
+        Map.fold (fun s k v -> Map.add k v s) m1 m2

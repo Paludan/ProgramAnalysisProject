@@ -16,6 +16,6 @@ let ifthen = (DD(DInt("x"), DInt("y")), IT(ROp(Var(Id "x"), Eq, Int 0), Ass(Id "
 let dg = declGraph 0 (amountOfDecls (fst fac)) (fst fac) (Map.ofList[])
 let sg = stmGraph (amountOfDecls (fst fac)) -1 (snd fac) dg 
 
-let pg = programGraph dg sg
+let pg = mapMerge dg sg
 
-let a = tfRD( ( (0, (S <| RAss(Id "y", Int 1, AOp (Int (1), Mul, Int (2)))), 1)), Map.empty)
+let b = workListAlgorithm pg
