@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{8372090B-043D-4DB8-A3FF-54A179BD2127}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main.fsx">
+    <Files>
+      <File FileName="Analysis.fsx" Line="153" Column="1" />
+      <File FileName="Types.fsx" Line="90" Column="56" />
+      <File FileName="Main.fsx" Line="23" Column="73" />
+      <File FileName="Programgraph.fsx" Line="6" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>analysisResult</Value>
+          <Value>m[y]</Value>
+          <Value>test</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Module PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
