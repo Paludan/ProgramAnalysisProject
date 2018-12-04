@@ -35,3 +35,7 @@
 build/
 cmake-build-debug/
 .idea/
+/Module/bin/
+/Module/obj/
+.idea/
+.vscode/
